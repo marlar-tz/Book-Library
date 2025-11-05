@@ -15,7 +15,7 @@ app.use((req, res, next) => {
 })
 
 // routes
-app.use('/api/books',bookRoutes)
+app.use('/api/books', bookRoutes)
 
 // listen for requests
 app.listen(process.env.PORT, () => {
