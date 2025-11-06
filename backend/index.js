@@ -17,6 +17,11 @@ app.use((req, res, next) => {
     next()
 })
 
+// ✅ Test with root route
+app.get('/', (req, res) => {
+    res.status(200).json({ message: 'Server is running on Vercel!' });
+});
+
 // routes
 app.use('/api/books', bookRoutes)
 
